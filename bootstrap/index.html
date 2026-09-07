@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronan Carletto - Portfólio</title>
+
+    <!-- Bootstrap 5 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS do projeto (externo) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg border-bottom bg-body sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#top">
+                <i class="fa-solid fa-code me-2"></i>Ronan Carletto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interesses">Interesses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
+                    <span class="small text-secondary d-none d-lg-inline">Tema</span>
+                    <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Informações Básicas -->
+    <header id="top" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-4 text-center">
+                    <img class="profile-img shadow-sm rounded-circle img-fluid border p-1" src="assets/img/foto.jpg"
+                        alt="Foto de perfil" style="max-width: 220px;">
+                    <div class="mt-3">
+                        <span class="badge text-bg-primary me-1">Sistemas de Informação</span>
+                        <span class="badge text-bg-secondary">UFLA</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h1 class="display-6 fw-semibold mb-3">
+                        Olá! Eu sou <span class="text-primary">Ronan Carletto</span>
+                    </h1>
+                    <p class="lead text-secondary mb-4">
+                        Analista de Inteligência de Dados, atuando com Prevenção a Fraudes, OSINT e desenvolvimento de
+                        soluções tecnológicas.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-primary" href="#projetos">
+                            <i class="fa-solid fa-diagram-project me-2"></i>Ver projetos
+                        </a>
+                        <a class="btn btn-outline-primary" href="#contato">
+                            <i class="fa-solid fa-envelope me-2"></i>Contato
+                        </a>
+                        <a class="btn btn-outline-secondary" href="https://github.com/carlettoronan" target="_blank"
+                            rel="noreferrer">
+                            <i class="fa-brands fa-github me-2"></i>GitHub
+                        </a>
+                        <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/carlettoronan"
+                            target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 rounded-3 border bg-body-tertiary h-100">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-graduation-cap text-primary"></i>
+                                    <strong>Formação</strong>
+                                </div>
+                                <p class="mb-0 text-secondary small">
+                                    Sistemas de Informação - Universidade Federal de Lavras (UFLA) e Comunicação Social
+                                    - UNA.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 rounded-3 border bg-body-tertiary h-100">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-bullseye text-primary"></i>
+                                    <strong>Foco Atual</strong>
+                                </div>
+                                <p class="mb-0 text-secondary small">
+                                    Cruzamento de dados, inteligência investigativa (OSINT) e desenvolvimento web
+                                    prático.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pb-5">
+        <!-- Sobre -->
+        <section id="sobre" class="py-4">
+            <div class="container">
+                <div class="mb-3">
+                    <h2 class="h4 mb-1">Sobre</h2>
+                    <p class="text-secondary mb-0">Trajetória integrando tecnologia, investigação e inteligência
+                        analítica.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-7">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <p class="mb-2">
+                                    Atuo na intersecção entre a tecnologia, a investigação e a estratégia. Minha
+                                    trajetória une uma base sólida em Comunicação Social com a tecnologia e inteligência
+                                    de dados.
+                                </p>
+                                <p class="mb-0 text-secondary">
+                                    Estudante de Sistemas de Informação na UFLA, com rotina voltada à análise
+                                    estruturada de dados, mapeamento de estruturas e aplicação de OSINT (Open-Source
+                                    Intelligence), traduzindo evidências digitais em relatórios acionáveis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6 mb-3">Informações rápidas</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 mb-2">
+                                        <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                                        <div><strong>Localização:</strong> Lavras - MG</div>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-start mb-2">
+                                        <i class="fa-solid fa-language mt-1 text-primary"></i>
+                                        <div><strong>Idiomas:</strong> Português, Inglês (Fluente)</div>
+                                    </li>
+                                    <li class="d-flex gap-2">
+                                        <i class="fa-solid fa-shield-halved text-primary mt-1"></i>
+                                        <div><strong>Expertise:</strong> OSINT, Compliance e Prevenção a Fraudes</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-4">
+            <div class="container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Habilidades</h2>
+                    <p class="text-secondary mb-0">Tecnologias e competências fundamentais no dia a dia.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6">Tecnologias & Ferramentas</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+                                    <span class="badge rounded-pill text-bg-primary">Python</span>
+                                    <span class="badge rounded-pill text-bg-secondary">HTML</span>
+                                    <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                                    <span class="badge rounded-pill text-bg-secondary">SQLite</span>
+                                    <span class="badge rounded-pill text-bg-secondary">Git/GitHub</span>
+                                </div>
+                                <hr>
+                                <h3 class="h6">Competências Analíticas</h3>
+                                <ul class="mb-0 small text-secondary">
+                                    <li>OSINT (Open-Source Intelligence)</li>
+                                    <li>Prevenção a Fraudes e Compliance</li>
+                                    <li>Análise de Dados e Resolução de Problemas</li>
+                                    <li>Estruturação de Relatórios Técnicos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6 mb-3">Nível de Familiaridade</h3>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between small">
+                                        <span>Python</span><span class="text-secondary">Básico</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between small">
+                                        <span>JavaScript</span><span class="text-secondary">Básico</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <div class="d-flex justify-content-between small">
+                                        <span>HTML / CSS</span><span class="text-secondary">Básico</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="py-4">
+            <div class="container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Projetos</h2>
+                    <p class="text-secondary mb-0">Repositórios e aplicações em desenvolvimento acadêmico e prático.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0">Missão Lua</h3>
+                                    <span class="badge text-bg-secondary">JavaScript</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Jogo web interativo em JavaScript puro, HTML5 e CSS3, com mecânicas de movimento por
+                                    toque/teclado, colisão, fases e animações.
+                                </p>
+                                <div class="mt-auto d-flex gap-2 pt-3">
+                                    <a class="btn btn-sm btn-outline-primary"
+                                        href="https://github.com/carlettoronan/rocket-game" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="btn btn-sm btn-primary"
+                                        href="https://carlettoronan.github.io/rocket-game/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0">Sistema de Estoque</h3>
+                                    <span class="badge text-bg-secondary">Python</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Aplicação web (MVP) para controle de estoque e frente de caixa com autenticação por
+                                    níveis de acesso e banco de dados SQLite.
+                                </p>
+                                <div class="mt-auto d-flex gap-2 pt-3">
+                                    <a class="btn btn-sm btn-outline-primary"
+                                        href="https://github.com/carlettoronan/sistema-estoque-eng-software"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0">Portfólio Web (GAC116)</h3>
+                                    <span class="badge text-bg-secondary">Bootstrap</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Página pessoal responsiva desenvolvida para a disciplina de Programação Web da UFLA.
+                                </p>
+                                <div class="mt-auto d-flex gap-2 pt-3">
+                                    <a class="btn btn-sm btn-outline-primary"
+                                        href="https://github.com/carlettoronan/pagina-pessoal" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interesses -->
+        <section id="interesses" class="py-4">
+            <div class="container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Interesses</h2>
+                    <p class="text-secondary mb-0">Áreas de estudo e tópicos de foco pessoal.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <ul class="mb-0 small text-secondary">
+                                    <li class="mb-2">Análise de Inteligência e OSINT</li>
+                                    <li class="mb-2">Prevenção a Fraudes e Compliance</li>
+                                    <li class="mb-2">Desenvolvimento Web (Front-end e Back-end)</li>
+                                    <li>Banco de Dados e Modelagem de Informação</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6">Abordagem</h3>
+                                <p class="text-secondary small mb-2">
+                                    Sempre buscando unir a visão analítica de dados com a prática de engenharia de
+                                    software para construir soluções úteis.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-magnifying-glass me-1"></i>Investigação</span>
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-code me-1"></i>Tecnologia</span>
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-chart-line me-1"></i>Dados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="py-4">
+            <div class="container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Contato</h2>
+                    <p class="text-secondary mb-0">Canais para se conectar comigo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 align-items-center mb-3">
+                                        <i class="fa-solid fa-envelope text-primary"></i>
+                                        <span>carlettoronan@gmail.com</span>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center mb-3">
+                                        <i class="fa-brands fa-linkedin text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0"
+                                            href="https://www.linkedin.com/in/carlettoronan" target="_blank"
+                                            rel="noreferrer">
+                                            linkedin.com/in/carlettoronan
+                                        </a>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <i class="fa-brands fa-github text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0"
+                                            href="https://github.com/carlettoronan" target="_blank" rel="noreferrer">
+                                            github.com/carlettoronan
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <p class="text-secondary small mb-3">
+                                    Disponível para trocas de ideias sobre tecnologia, dados, investigações digitais e
+                                    projetos de desenvolvimento web.
+                                </p>
+                                <a href="mailto:carlettoronan@gmail.com"
+                                    class="btn btn-outline-primary btn-sm align-self-start">
+                                    <i class="fa-solid fa-paper-plane me-1"></i>Enviar E-mail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer class="border-top py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <small class="text-secondary">&copy; <span id="year"></span> Ronan Gustavo Carletto — GAC116 Programação
+                Web</small>
+            <small class="text-secondary">Desenvolvido com HTML + Bootstrap + JavaScript</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS do projeto para Tema Escuro/Claro -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+        const themeIcon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            if (currentTheme === 'light') {
+                htmlElement.setAttribute('data-bs-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                htmlElement.setAttribute('data-bs-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    </script>
+</body>
+
+</html>

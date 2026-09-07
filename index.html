@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronan Carletto - Portfólio (GAC116)</title>
+    <!-- Tailwind via CDN apenas para estilizar a página de entrada com rapidez -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
+    <!-- Cabeçalho -->
+    <header class="py-12 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 mb-3 inline-block">
+                GAC116 — Programação Web | UFLA
+            </span>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-2">
+                Ronan Gustavo Carletto
+            </h1>
+            <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+                Página pessoal desenvolvida em dupla implementação de frameworks CSS para a disciplina de Programação
+                Web. Escolha abaixo a versão que deseja visualizar:
+            </p>
+        </div>
+    </header>
+
+    <!-- Cards de Escolha -->
+    <main class="max-w-4xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-6 pb-16">
+        <!-- Card Bootstrap -->
+        <div
+            class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+                <div
+                    class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Versão Bootstrap 5</h2>
+                <p class="text-slate-600 text-sm mb-6">
+                    Implementação utilizando componentes nativos do Bootstrap 5, sistema de grid avançado e manipulação
+                    via atributo <code class="bg-slate-100 px-1.5 py-0.5 rounded text-xs">data-bs-theme</code>.
+                </p>
+            </div>
+            <a href="bootstrap/index.html"
+                class="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm transition">
+                <span>Acessar Versão Bootstrap</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+
+        <!-- Card Tailwind -->
+        <div
+            class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+                <div
+                    class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Versão Tailwind CSS</h2>
+                <p class="text-slate-600 text-sm mb-6">
+                    Implementação utilizando a abordagem utility-first do Tailwind CSS, estruturação flexível e
+                    manipulação de tema escuro via classes do DOM.
+                </p>
+            </div>
+            <a href="tailwind css/index.html"
+                class="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-medium text-sm transition">
+                <span>Acessar Versão Tailwind</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-6 border-t border-slate-200 text-center text-xs text-slate-500">
+        <p>&copy; <span id="year"></span> Ronan Gustavo Carletto — Sistemas de Informação UFLA</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

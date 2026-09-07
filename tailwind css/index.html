@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronan Carletto - Portfólio (Tailwind)</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS do projeto (externo) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body
+    class="bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+    <!-- Navbar -->
+    <nav
+        class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a class="font-semibold tracking-tight flex items-center gap-2" href="#top">
+                <i class="fa-solid fa-code text-cyan-600 dark:text-cyan-400"></i>Ronan Carletto
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="#sobre">Sobre</a>
+                <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="#habilidades">Habilidades</a>
+                <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="#projetos">Projetos</a>
+                <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="#interesses">Interesses</a>
+                <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="#contato">Contato</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-slate-500 dark:text-slate-400 hidden sm:inline">Tema</span>
+                <button id="themeToggle"
+                    class="p-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 transition"
+                    type="button">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Informações Básicas -->
+    <header id="top" class="py-12 md:py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-4 text-center">
+                    <img class="profile-img shadow-md mx-auto border-2 border-slate-200 dark:border-slate-700 p-1 object-cover"
+                        src="assets/img/foto.jpg" alt="Foto de perfil">
+                    <div class="mt-4 flex justify-center gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">Sistemas
+                            de Informação</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">UFLA</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-8">
+                    <h1 class="text-3xl md:text-4xl font-semibold mb-3 tracking-tight">
+                        Olá! Eu sou <span class="text-cyan-600 dark:text-cyan-400">Ronan Carletto</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Analista de Inteligência de Dados, atuando com Prevenção a Fraudes, OSINT e desenvolvimento de
+                        soluções tecnológicas.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a class="px-5 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-medium transition shadow-sm flex items-center gap-2 text-sm"
+                            href="#projetos">
+                            <i class="fa-solid fa-diagram-project"></i>Ver projetos
+                        </a>
+                        <a class="px-5 py-2.5 rounded-xl border border-cyan-600 text-cyan-600 hover:bg-cyan-50 dark:hover:bg-slate-900 transition font-medium flex items-center gap-2 text-sm"
+                            href="#contato">
+                            <i class="fa-solid fa-envelope"></i>Contato
+                        </a>
+                        <a class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition font-medium flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300"
+                            href="https://github.com/carlettoronan" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-github"></i>GitHub
+                        </a>
+                        <a class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition font-medium flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300"
+                            href="https://www.linkedin.com/in/carlettoronan" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>LinkedIn
+                        </a>
+                    </div>
+                    <hr class="my-6 border-slate-200 dark:border-slate-800">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                            <div class="flex items-center gap-2 mb-2 font-medium">
+                                <i class="fa-solid fa-graduation-cap text-cyan-600 dark:text-cyan-400"></i>
+                                <strong>Formação</strong>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Sistemas de Informação - Universidade Federal de Lavras (UFLA) e Comunicação Social -
+                                UNA.
+                            </p>
+                        </div>
+                        <div
+                            class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                            <div class="flex items-center gap-2 mb-2 font-medium">
+                                <i class="fa-solid fa-bullseye text-cyan-600 dark:text-cyan-400"></i>
+                                <strong>Foco Atual</strong>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Cruzamento de dados, inteligência investigativa (OSINT) e desenvolvimento web prático.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow space-y-12 pb-16">
+        <!-- Sobre -->
+        <section id="sobre" class="max-w-6xl mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-1">Sobre</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Trajetória integrando tecnologia, investigação e
+                    inteligência analítica.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-7">
+                    <div
+                        class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm h-full flex flex-col justify-center">
+                        <p class="mb-4 leading-relaxed">
+                            Atuo na intersecção entre a tecnologia, a investigação e a estratégia. Minha trajetória une
+                            uma base sólida em Comunicação Social com a tecnologia e inteligência de dados.
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Estudante de Sistemas de Informação na UFLA, com rotina voltada à análise estruturada de
+                            dados, mapeamento de estruturas e aplicação de OSINT (Open-Source Intelligence), traduzindo
+                            evidências digitais em relatórios acionáveis.
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div
+                        class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm h-full">
+                        <h3 class="font-semibold mb-4">Informações rápidas</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-cyan-600 dark:text-cyan-400 mt-1"></i>
+                                <div><strong>Localização:</strong> Lavras - MG</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-language text-cyan-600 dark:text-cyan-400 mt-1"></i>
+                                <div><strong>Idiomas:</strong> Português, Inglês (Fluente)</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-cyan-600 dark:text-cyan-400 mt-1"></i>
+                                <div><strong>Expertise:</strong> OSINT, Compliance e Prevenção a Fraudes</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="max-w-6xl mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-1">Habilidades</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Tecnologias e competências fundamentais no dia a
+                    dia.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-semibold mb-3">Tecnologias & Ferramentas</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300">JavaScript</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300">Python</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">CSS</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">SQLite</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Git/GitHub</span>
+                        </div>
+                        <hr class="border-slate-200 dark:border-slate-800 my-4">
+                        <h3 class="font-semibold mb-2">Competências Analíticas</h3>
+                        <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+                            <li>• OSINT (Open-Source Intelligence)</li>
+                            <li>• Prevenção a Fraudes e Compliance</li>
+                            <li>• Análise de Dados e Resolução de Problemas</li>
+                            <li>• Estruturação de Relatórios Técnicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-semibold mb-4">Nível de Familiaridade</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Python</span><span class="text-slate-500 text-xs">Básico</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                                    <div class="bg-cyan-600 h-2 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>JavaScript</span><span class="text-slate-500 text-xs">Básico</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                                    <div class="bg-cyan-600 h-2 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>HTML / CSS</span><span class="text-slate-500 text-xs">Básico</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                                    <div class="bg-cyan-600 h-2 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="max-w-6xl mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-1">Projetos</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Repositórios e aplicações em desenvolvimento
+                    acadêmico e prático.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Missão Lua -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between gap-2 mb-3">
+                            <h3 class="font-semibold text-lg">Missão Lua</h3>
+                            <span
+                                class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">JavaScript</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Jogo web interativo em JavaScript puro, HTML5 e CSS3, com mecânicas de movimento por
+                            toque/teclado, colisão, fases e animações.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 pt-2">
+                        <a class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-medium transition flex items-center gap-1.5"
+                            href="https://github.com/carlettoronan/rocket-game" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-github"></i>Repositório
+                        </a>
+                        <a class="px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-medium transition flex items-center gap-1.5"
+                            href="https://carlettoronan.github.io/rocket-game/" target="_blank" rel="noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sistema de Estoque -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between gap-2 mb-3">
+                            <h3 class="font-semibold text-lg">Sistema de Estoque</h3>
+                            <span
+                                class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Python</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Aplicação web (MVP) para controle de estoque e frente de caixa com autenticação por níveis
+                            de acesso e banco de dados SQLite.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 pt-2">
+                        <a class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-medium transition flex items-center gap-1.5"
+                            href="https://github.com/carlettoronan/sistema-estoque-eng-software" target="_blank"
+                            rel="noreferrer">
+                            <i class="fa-brands fa-github"></i>Repositório
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfólio Web -->
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between gap-2 mb-3">
+                            <h3 class="font-semibold text-lg">Portfólio Web (GAC116)</h3>
+                            <span
+                                class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Tailwind</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Página pessoal responsiva desenvolvida para a disciplina de Programação Web da UFLA.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 pt-2">
+                        <a class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-medium transition flex items-center gap-1.5"
+                            href="https://github.com/carlettoronan/pagina-pessoal" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-github"></i>Repositório
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interesses -->
+        <section id="interesses" class="max-w-6xl mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-1">Interesses</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Áreas de estudo e tópicos de foco pessoal.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+                    <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
+                        <li>• Análise de Inteligência e OSINT</li>
+                        <li>• Prevenção a Fraudes e Compliance</li>
+                        <li>• Desenvolvimento Web (Front-end e Back-end)</li>
+                        <li>• Banco de Dados e Modelagem de Informação</li>
+                    </ul>
+                </div>
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-semibold mb-2">Abordagem</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Sempre buscando unir a visão analítica de dados com a prática de engenharia de software para
+                            construir soluções úteis.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 rounded-md text-xs border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 flex items-center gap-1"><i
+                                    class="fa-solid fa-magnifying-glass"></i>Investigação</span>
+                            <span
+                                class="px-3 py-1 rounded-md text-xs border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 flex items-center gap-1"><i
+                                    class="fa-solid fa-code"></i>Tecnologia</span>
+                            <span
+                                class="px-3 py-1 rounded-md text-xs border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 flex items-center gap-1"><i
+                                    class="fa-solid fa-chart-line"></i>Dados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="max-w-6xl mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-1">Contato</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Canais para se conectar comigo.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-cyan-600 dark:text-cyan-400"></i>
+                            <span>carlettoronan@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-linkedin text-cyan-600 dark:text-cyan-400"></i>
+                            <a class="hover:underline text-cyan-600 dark:text-cyan-400"
+                                href="https://www.linkedin.com/in/carlettoronan" target="_blank" rel="noreferrer">
+                                linkedin.com/in/carlettoronan
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-github text-cyan-600 dark:text-cyan-400"></i>
+                            <a class="hover:underline text-cyan-600 dark:text-cyan-400"
+                                href="https://github.com/carlettoronan" target="_blank" rel="noreferrer">
+                                github.com/carlettoronan
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-center">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                        Disponível para trocas de ideias sobre tecnologia, dados, investigações digitais e projetos de
+                        desenvolvimento web.
+                    </p>
+                    <a href="mailto:carlettoronan@gmail.com"
+                        class="inline-flex items-center gap-2 self-start px-4 py-2 rounded-xl border border-cyan-600 text-cyan-600 hover:bg-cyan-50 dark:hover:bg-slate-800 text-sm font-medium transition">
+                        <i class="fa-solid fa-paper-plane"></i>Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-6 mt-auto">
+        <div
+            class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+            <p>&copy; <span id="year"></span> Ronan Gustavo Carletto — GAC116 Programação Web</p>
+            <p>Desenvolvido com HTML + Tailwind CSS + JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JS do projeto (externo) -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
