@@ -7,6 +7,8 @@ Repositório desenvolvido para a disciplina de **Programação Web** da Universi
 * **Nome:** Ronan Gustavo Carletto
 * **Curso:** Sistemas de Informação — UFLA
 
+## 🔗 Links Importantes
+* **Acesse o site publicado:** [https://carlettoronan.github.io/pagina-pessoal/](https://carlettoronan.github.io/pagina-pessoal/)
 ---
 
 ## 📂 Estrutura do Projeto
